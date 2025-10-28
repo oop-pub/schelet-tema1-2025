@@ -3,37 +3,32 @@
   "message" : "Simulation has started.",
   "timestamp" : 1
 }, {
-  "command" : "moveRobot",
-  "message" : "The robot has successfully moved to position (0, 1).",
-  "timestamp" : 2
-}, {
   "command" : "scanObject",
-  "message" : "The scanned object is water.",
-  "timestamp" : 3
+  "message" : "The scanned object is a plant.",
+  "timestamp" : 2
 }, {
   "command" : "printEnvConditions",
   "output" : {
     "soil" : {
-      "type" : "SwampSoil",
-      "name" : "WetPeat",
-      "mass" : 1100.0,
-      "nitrogen" : 2.0,
-      "waterRetention" : 0.7,
-      "soilpH" : 6.3,
-      "organicMatter" : 0.5,
-      "soilQuality" : 0.8,
-      "waterLogging" : 0.5
+      "type" : "TundraSoil",
+      "name" : "ArcticTundraSoil",
+      "mass" : 800.0,
+      "nitrogen" : 0.9,
+      "waterRetention" : 0.3,
+      "soilpH" : 7.5,
+      "organicMatter" : 0.05,
+      "soilQuality" : 0.0,
+      "permafrostDepth" : 6.0
     },
-    "water" : {
-      "type" : "pond",
-      "name" : "SmallPond",
-      "mass" : 30.0,
-      "purity" : 85.0,
-      "salinity" : 0.1,
-      "turbidity" : 2.0,
-      "contaminantIndex" : 0.5,
-      "pH" : 6.6,
-      "isFrozen" : true
+    "plants" : {
+      "type" : "FloweringPlants",
+      "name" : "Tulip",
+      "mass" : 0.5
+    },
+    "animals" : {
+      "type" : "Omnivores",
+      "name" : "Bear",
+      "mass" : 300.0
     },
     "air" : {
       "type" : "TropicalAir",
@@ -41,11 +36,15 @@
       "mass" : 950000.0,
       "humidity" : 85.0,
       "temperature" : 30.0,
-      "oxygenLevel" : 21.0,
-      "airQuality" : 84.5,
+      "oxygenLevel" : 27.2,
+      "airQuality" : 96.9,
       "co2Level" : 0.04
     }
   },
+  "timestamp" : 3
+}, {
+  "command" : "moveRobot",
+  "message" : "The robot has successfully moved to position (0, 1).",
   "timestamp" : 4
 }, {
   "command" : "getEnergyStatus",
@@ -56,45 +55,44 @@
   "message" : "The robot has successfully moved to position (0, 0).",
   "timestamp" : 6
 }, {
-  "command" : "moveRobot",
-  "message" : "The robot has successfully moved to position (0, 1).",
-  "timestamp" : 7
-}, {
   "command" : "printEnvConditions",
   "output" : {
     "soil" : {
-      "type" : "SwampSoil",
-      "name" : "WetPeat",
-      "mass" : 1100.0,
-      "nitrogen" : 2.0,
-      "waterRetention" : 0.9,
-      "soilpH" : 6.3,
-      "organicMatter" : 0.5,
-      "soilQuality" : 0.8,
-      "waterLogging" : 0.5
+      "type" : "TundraSoil",
+      "name" : "ArcticTundraSoil",
+      "mass" : 800.0,
+      "nitrogen" : 0.9,
+      "waterRetention" : 0.3,
+      "soilpH" : 7.5,
+      "organicMatter" : 0.05,
+      "soilQuality" : 0.0,
+      "permafrostDepth" : 6.0
     },
-    "water" : {
-      "type" : "pond",
-      "name" : "SmallPond",
-      "mass" : 30.0,
-      "purity" : 85.0,
-      "salinity" : 0.1,
-      "turbidity" : 2.0,
-      "contaminantIndex" : 0.5,
-      "pH" : 6.6,
-      "isFrozen" : true
+    "plants" : {
+      "type" : "FloweringPlants",
+      "name" : "Tulip",
+      "mass" : 0.5
+    },
+    "animals" : {
+      "type" : "Omnivores",
+      "name" : "Bear",
+      "mass" : 300.0
     },
     "air" : {
       "type" : "TropicalAir",
       "name" : "Humid Tropical Air",
       "mass" : 950000.0,
-      "humidity" : 85.2,
+      "humidity" : 85.0,
       "temperature" : 30.0,
-      "oxygenLevel" : 21.0,
-      "airQuality" : 84.6,
+      "oxygenLevel" : 52.5,
+      "airQuality" : 100.0,
       "co2Level" : 0.04
     }
   },
+  "timestamp" : 7
+}, {
+  "command" : "moveRobot",
+  "message" : "The robot has successfully moved to position (0, 1).",
   "timestamp" : 8
 }, {
   "command" : "moveRobot",
@@ -102,7 +100,7 @@
   "timestamp" : 9
 }, {
   "command" : "getEnergyStatus",
-  "message" : "TerraBot has 4947 energy points left.",
+  "message" : "TerraBot has 4955 energy points left.",
   "timestamp" : 10
 }, {
   "command" : "moveRobot",
@@ -113,48 +111,43 @@
   "message" : "The robot has successfully moved to position (0, 0).",
   "timestamp" : 12
 }, {
-  "command" : "moveRobot",
-  "message" : "The robot has successfully moved to position (0, 1).",
-  "timestamp" : 13
-}, {
   "command" : "printEnvConditions",
   "output" : {
     "soil" : {
-      "type" : "SwampSoil",
-      "name" : "WetPeat",
-      "mass" : 1100.0,
-      "nitrogen" : 2.0,
-      "waterRetention" : 1.2,
-      "soilpH" : 6.3,
-      "organicMatter" : 0.5,
-      "soilQuality" : 0.8,
-      "waterLogging" : 0.5
+      "type" : "TundraSoil",
+      "name" : "ArcticTundraSoil",
+      "mass" : 800.0,
+      "nitrogen" : 0.9,
+      "waterRetention" : 0.3,
+      "soilpH" : 7.5,
+      "organicMatter" : 0.05,
+      "soilQuality" : 0.0,
+      "permafrostDepth" : 6.0
     },
-    "water" : {
-      "type" : "pond",
-      "name" : "SmallPond",
-      "mass" : 30.0,
-      "purity" : 85.0,
-      "salinity" : 0.1,
-      "turbidity" : 2.0,
-      "contaminantIndex" : 0.5,
-      "pH" : 6.6,
-      "isFrozen" : true
+    "plants" : {
+      "type" : "FloweringPlants",
+      "name" : "Tulip",
+      "mass" : 0.5
+    },
+    "animals" : {
+      "type" : "Omnivores",
+      "name" : "Bear",
+      "mass" : 300.0
     },
     "air" : {
       "type" : "TropicalAir",
       "name" : "Humid Tropical Air",
       "mass" : 950000.0,
-      "humidity" : 85.5,
+      "humidity" : 85.0,
       "temperature" : 30.0,
-      "oxygenLevel" : 21.0,
-      "airQuality" : 84.75,
+      "oxygenLevel" : 92.1,
+      "airQuality" : 100.0,
       "co2Level" : 0.04
     }
   },
-  "timestamp" : 14
+  "timestamp" : 13
 }, {
   "command" : "endSimulation",
   "message" : "Simulation has ended.",
-  "timestamp" : 15
+  "timestamp" : 14
 } ]

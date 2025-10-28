@@ -60,7 +60,7 @@
       "temperature" : 15.0,
       "oxygenLevel" : 20.0,
       "airQuality" : 35.5,
-      "desertStorm" : true
+      "desertStorm" : false
     }
   },
   "timestamp" : 7
