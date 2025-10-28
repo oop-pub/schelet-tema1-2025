@@ -33,6 +33,11 @@
       "name" : "Tulip",
       "mass" : 0.5
     },
+    "animals" : {
+      "type" : "Omnivores",
+      "name" : "Bear",
+      "mass" : 300.0
+    },
     "air" : {
       "type" : "TropicalAir",
       "name" : "Humid Tropical Air",
