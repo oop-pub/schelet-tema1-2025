@@ -62,7 +62,10 @@ public class TestRunner {
                 Arguments.of("test15", "input/test15_improve_environment_errors.json", "out/out_test15_improve_environment_errors.json", "ref/ref_test15_improve_environment_errors.json", 2),
                 Arguments.of("test16", "input/test16_mid.json", "out/out_test16_mid.json", "ref/ref_test16_mid.json", 6),
                 Arguments.of("test17", "input/test17_multiple_simulations.json", "out/out_test17_multiple_simulations.json", "ref/ref_test17_multiple_simulations.json", 3),
-                Arguments.of("test18", "input/test18_multiple_simulations_error.json", "out/out_test18_multiple_simulations_error.json", "ref/ref_test18_multiple_simulations_error.json", 2)
+                Arguments.of("test18", "input/test18_multiple_simulations_error.json", "out/out_test18_multiple_simulations_error.json", "ref/ref_test18_multiple_simulations_error.json", 2),
+                Arguments.of("test19", "input/test19_complex_simple.json", "out/out_test19_complex_simple.json", "ref/ref_test19_complex_simple.json", 6),
+                Arguments.of("test20", "input/test20_complex_errors.json", "out/out_test20_complex_errors.json", "ref/ref_test20_complex_errors.json", 6),
+                Arguments.of("test21", "input/test21_complex_combined.json", "out/out_test21_complex_combined.json", "ref/ref_test21_complex_combined.json", 8)
         );
     }
 
