@@ -127,6 +127,7 @@ public class TestRunner {
         int errorCount = checker.process(files);
         checker.destroy();
 
+        String checkStyleErrors = checkstyleAuditListener.toString();
         try {
             assertThat(errorCount).isLessThanOrEqualTo(CheckerConstants.MAXIMUM_ERROR_CHECKSTYLE);
             devmindResults.add(new DevmindResult(
@@ -137,6 +138,7 @@ public class TestRunner {
                     "PASS",
                     CheckerConstants.CHECKSTYLE_POINTS
             ));
+            System.out.println(checkStyleErrors);
         }
         catch (AssertionError e) {
             devmindResults.add(new DevmindErrorResult(
@@ -147,7 +149,7 @@ public class TestRunner {
                     10,
                     e.getMessage()
             ));
-            throw new CheckstyleException(checkstyleAuditListener.toString());
+            throw new CheckstyleException(checkStyleErrors);
         }
     }
 
