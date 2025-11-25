@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,12 +8,12 @@ public class DevmindResult {
     @JsonProperty
     private final String test;
 
-    @Getter
     @JsonProperty
     private final String status;
 
     @JsonProperty("test_score")
     private final int testScore;
+
 
     public DevmindResult(String test, String status, int testScore) {
         this.test = test;
@@ -28,5 +29,9 @@ public class DevmindResult {
         } catch (JsonProcessingException e) {
             return e.getMessage();
         }
+    }
+
+    public String getStatus() {
+        return status;
     }
 }
